@@ -49,3 +49,8 @@ ul {
 .game-info {
   margin-left: 20px;
 }
+
+.current,
+.current button {
+  font-weight: bolder;
+}
