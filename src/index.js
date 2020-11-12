@@ -129,7 +129,11 @@ class Game extends React.Component {
       line = winner.line.slice()
       status = 'Winner: ' + winner.winner
     } else {
-      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O')
+      if (current.squares.includes(null)) {
+        status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O')
+      } else {
+        status = 'Draw'
+      }
     }
 
     const moves = history.map((step, move) => {
