@@ -60,3 +60,7 @@ ul {
   margin-top: -20px;
   margin-left: 110px;
 }
+
+.highlight {
+  background-color: #999;
+}
